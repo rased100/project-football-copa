@@ -107,3 +107,29 @@ body{
     padding: 5px;
     color: rgb(82, 79, 79);
 }
+
+
+
+/*--------------------------
+        Media Queries 
+ ---------------------------*/
+
+  /* Mobile device */
+ @media only screen and (max-width:688px) {
+    .container{
+        width: 100%;
+    }
+    .football-players{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+     /* tablet devices */
+ @media only screen and (min-width: 688px) and (max-width:992px) {
+    .container{
+        width: 100%;
+    }
+    .football-players .top-football{
+       grid-template-columns: repeat(2, 1fr);
+    }
+}
